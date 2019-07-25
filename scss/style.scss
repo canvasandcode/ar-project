@@ -56,13 +56,51 @@
   animation: Gradient 15s ease infinite;
   margin: 0;
 }
-  }
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
   .jeefacetransferCanvas {
     z-index: 20;
     position: absolute;
     bottom: 0px;
     left: 0px;
     max-height: 25vh;
+    width: 100px;
+    height: 80px;
   }
 
   .webojiCanvas {

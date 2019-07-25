@@ -10,9 +10,10 @@ function main(){
       NNCpath: '../ar_exp_source/dist/',
 
       //FOX :
-      meshURL: 'meshes/fox.json',
+      //meshURL: 'meshes/fox.json',
+      meshURL: 'meshes/tiger.json',
       matParameters: {
-        diffuseMapURL: 'textures/Fox_albedo.png',
+        diffuseMapURL: 'textures/diffuse_tiger.jpg',
         specularMapURL: 'textures/Fox_specular.png',
         flexMapURL: 'textures/Fox_flex.png'
       },

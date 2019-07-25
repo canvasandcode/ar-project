@@ -8,14 +8,16 @@ import pdb
 
 # SETTINGS
 TMPPATH='./tmp/'
-OUTPUTPATH='../../assets/3D/meshes/'
+# OUTPUTPATH='../../assets/3D/meshes/'
+OUTPUTPATH='../assets/3D/meshes/'
 
 # get command line arguments
 if len(sys.argv)==1:
 	print 'Invalid usage. usage : buildMorphs.py <morphPath>'
 	exit(0)
 morphPath=sys.argv[1]
-INPUTPATH ='./meshes/'+morphPath+'/'
+# INPUTPATH ='./meshes/'+morphPath+'/'
+INPUTPATH ='./'+morphPath+'/'
 OUTPUTNAME=morphPath+'.json'
 
 # begin funcz

@@ -1,115 +1,127 @@
 //hamburger line styles
 .icon-bar {
-    width: 38px;
-    height: 6px;
-    background-color: #6c6c6c;
-    display: block;
-    transition: all 0.2s;
-    margin-top: 4px;
+  width: 38px;
+  height: 6px;
+  background-color: #6c6c6c;
+  display: block;
+  transition: all 0.2s;
+  margin-top: 4px;
+}
+
+.navigation__wrapper {
+  background: rgba(0,0,0,0.5);
+}
+
+//hamburger animation
+.navbar {
+  z-index: 100; //to make sure emoji doesn't overlap nav
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+  .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
   }
-  
-  //hamburger animation
-  .navbar-toggler {
-    border: none;
-    background: transparent !important;
+  .middle-bar {
+    opacity: 0;
+  }
+  .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+  &.collapsed {
     .top-bar {
-      transform: rotate(45deg);
-      transform-origin: 10% 10%;
+      transform: rotate(0);
     }
     .middle-bar {
-      opacity: 0;
+      opacity: 1;
     }
     .bottom-bar {
-      transform: rotate(-45deg);
-      transform-origin: 10% 90%;
-    }
-    &.collapsed {
-      .top-bar {
-        transform: rotate(0);
-      }
-      .middle-bar {
-        opacity: 1;
-      }
-      .bottom-bar {
-        transform: rotate(0);
-      }
+      transform: rotate(0);
     }
   }
+}
 
-  //Links in hamburger menu
-  .nav-link {
-      font-size: 1.5em;
-  }
+//Links in hamburger menu
+.nav-link {
+  font-size: 1.5em;
+}
 
-  .jeefacetransferCanvas {
-    width: 15em;
-  }
+.jeefacetransferCanvas {
+  width: 15em;
+}
 
-  //Styling for weboji
-  body {
-    overflow: auto;
-    overflow-y: auto;
-    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
+//Styling for weboji
+.animated-bg {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 800%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
-  margin: 0;
 }
 
 @-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-  .jeefacetransferCanvas {
-    z-index: 20;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    max-height: 25vh;
-    width: 100px;
-    height: 80px;
-  }
+body {
+  overflow: auto;
+  overflow-y: auto;
+  
+  margin: 0;
+}
 
-  .webojiCanvas {
-    z-index: 10;
-    position: absolute;
-    max-height: 100%;
-    max-width: 100%;
-    left: 50%;
-    top: 50%;
-    width: 100vmin;
-    transform: translate(-50%, -50%);
-  }
+.jeefacetransferCanvas {
+  z-index: 20;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  max-height: 25vh;
+  width: 100px;
+  height: 80px;
+}
+
+.webojiCanvas {
+  z-index: 10;
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+  left: 50%;
+  top: 50%;
+  width: 100vmin;
+  transform: translate(-50%, -50%);
+}

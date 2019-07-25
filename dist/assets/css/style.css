@@ -7,6 +7,14 @@
   margin-top: 4px;
 }
 
+.navigation__wrapper {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  z-index: 100;
+}
+
 .navbar-toggler {
   border: none;
   background: transparent !important;
@@ -40,15 +48,12 @@
   width: 15em;
 }
 
-body {
-  overflow: auto;
-  overflow-y: auto;
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-  background-size: 400% 400%;
+.animated-bg {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 800%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
-  margin: 0;
 }
 
 @-webkit-keyframes Gradient {
@@ -84,6 +89,12 @@ body {
     background-position: 0% 50%;
   }
 }
+body {
+  overflow: auto;
+  overflow-y: auto;
+  margin: 0;
+}
+
 .jeefacetransferCanvas {
   z-index: 20;
   position: absolute;

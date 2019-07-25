@@ -1,18 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en-EN" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="assets/css/all.css" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    
     <title>AR Experience</title>
+
+    <!-- FACETRANSFER LIB : DETECT FACIAL EXPRESSIONS : -->
+    <script
+      type="text/javascript"
+      src="../ar_exp_source/dist/jeelizFaceTransfer.js"
+    ></script>
+
+    <!-- THREE.JS : -->
+    <script
+      type="text/javascript"
+      src="../ar_exp_source/libs/threejs/v93/three.min.js"
+    ></script>
+
+    <!-- CUSTOM SMALL LIBS : -->
+    <script
+      type="text/javascript"
+      src="../ar_exp_source/libs/custom/lib_ajax.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../ar_exp_source/libs/custom/lib_array.js"
+    ></script>
+
+    <!-- THREE.JS WEBOJI HELPER : -->
+    <!-- main helper : -->
+    <script
+      type="text/javascript"
+      src="../ar_exp_source/helpers/threejs/ThreeJeelizHelper.js"
+    ></script>
+    <!-- required to import the 3D model : -->
+    <script
+      type="text/javascript"
+      src="../ar_exp_source/helpers/threejs/ThreeMorphAnimGeomBuilder.js"
+    ></script>
+    <!-- required to add a material both flexible and with many morphs : -->
+    <script
+      type="text/javascript"
+      src="../ar_exp_source/helpers/threejs/ThreeMorphFlexibleMaterialBuilder.js"
+    ></script>
+
+    <!-- MAIN DEMO SCRIPT WITH main() FUNC : -->
+    <script type="text/javascript" src="ar_exp_main.js"></script>
+
+    <style type="text/css">
+      body {
+        overflow: auto;
+        overflow-y: auto;
+        background-color: white;
+        margin: 0px;
+      }
+      .jeefacetransferCanvas {
+        z-index: 20;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        max-height: 25vh;
+      }
+
+      .webojiCanvas {
+        z-index: 10;
+        position: absolute;
+        max-height: 100%;
+        max-width: 100%;
+        left: 50%;
+        top: 50%;
+        width: 100vmin;
+        transform: translate(-50%, -50%);
+      }
+    </style>
   </head>
-  <body>
+  <body onload="main()">
+    <!--Bootstrap Nav-->
     <nav class="navbar bg-dark">
       <button
         class="navbar-toggler collapsed"
@@ -42,20 +117,17 @@
         </ul>
       </div>
     </nav>
+    <!--Bootstrap Nav Ends-->
 
-
-    <!-- <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">VR Experience</h1>
-        <p class="lead">
-            Tech virtual drone online browser platform through in a system. But stream software offline. Professor install angel sector anywhere create at components smart. 
-        </p>
-
-        
-      </div>
-    </div> -->
-
-    
+    <!-- CANVAS WITH THE USER FACE : -->
+    <canvas class="jeefacetransferCanvas" id="jeefacetransferCanvas"></canvas>
+    <!-- CANVAS WITH THE WEBOJI : -->
+    <canvas
+      class="webojiCanvas"
+      id="webojiCanvas"
+      width="600"
+      height="600"
+    ></canvas>
 
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

@@ -1,6 +1,6 @@
 # AR Experience - Test
 
-> This is a starter pack for building Bootstrap 4 themes with Sass. It uses the node-sass pakage for compiling .scss to .css
+> Using dart scss for compiling .scss to .css
 
 It includes Bootstrap 4.1.3, Font Awesome 5, jQuery 3 and Lightbox 2
 

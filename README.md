@@ -1,4 +1,4 @@
-# Bootstrap 4 Sass Starter
+# AR Experience - Test
 
 > This is a starter pack for building Bootstrap 4 themes with Sass. It uses the node-sass pakage for compiling .scss to .css
 

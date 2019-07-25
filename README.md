@@ -14,4 +14,4 @@ npm install
 npm run sass
 
 # Make sure you ONLY edit the style.scss file and not dist/css/style.css
-```
+```# ar-project

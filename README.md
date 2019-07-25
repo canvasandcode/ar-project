@@ -1,4 +1,4 @@
-# AR Experience - Test
+# AR Experience
 
 > Using dart scss for compiling .scss to .css
 

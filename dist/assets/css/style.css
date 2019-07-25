@@ -1,7 +1,7 @@
 .icon-bar {
   width: 38px;
   height: 6px;
-  background-color: #b6b6b6;
+  background-color: #6c6c6c;
   display: block;
   transition: all 0.2s;
   margin-top: 4px;
@@ -34,6 +34,36 @@
 
 .nav-link {
   font-size: 1.5em;
+}
+
+.jeefacetransferCanvas {
+  width: 15em;
+}
+
+body {
+  overflow: auto;
+  overflow-y: auto;
+  background-color: white;
+  margin: 0px;
+}
+
+.jeefacetransferCanvas {
+  z-index: 20;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  max-height: 25vh;
+}
+
+.webojiCanvas {
+  z-index: 10;
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+  left: 50%;
+  top: 50%;
+  width: 100vmin;
+  transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=style.css.map */

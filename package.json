@@ -1,12 +1,12 @@
 {
-  "name": "btre_theme",
+  "name": "ar_landing",
   "version": "1.0.0",
-  "description": "Frontend theme for BT Real Esatate App",
+  "description": "Landing Page for AR Experience",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/assets/css/"
+    "sass": "sass scss/style.scss dist/assets/css/style.css"
   },
-  "author": "Brad Traversy",
+  "author": "TMSW",
   "license": "MIT",
   "dependencies": {
     "node-sass": "^4.9.3"

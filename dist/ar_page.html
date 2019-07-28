@@ -100,9 +100,10 @@
     <!-- Button trigger modal -->
     <button
       type="button"
-      class="btn btn-primary btn-lg capture-frame-btn"
+      class="btn btn-primary btn-lg"
       data-toggle="modal"
       data-target="#exampleModal"
+      id ="captureFrameBtn"
     >
       Capture!
     </button>
@@ -159,14 +160,13 @@
     //Gets the emoji canvas using its ID
 
 var canvas = document.getElementById("webojiCanvas");
-var img    = canvas.toDataURL("image/png");
-var captureButton = document.getElementsByClassName("capture-frame-btn");
+var img = canvas.toDataURL("image/png");
+var captureButton = document.getElementById("captureFrameBtn");
 var frameContainer = document.getElementById('frameContainer');
-captureButton.addEventListener("click", captureImage);
 
-function captureImage(){ 
+captureButton.addEventListener("click", function(){
   frameContainer.innerHTML = "<img src='" + img + "'>"
-}
+});
 
     </script>
     <script src="assets/js/jquery-3.3.1.min.js"></script>

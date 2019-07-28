@@ -125,3 +125,11 @@ body {
   width: 100vmin;
   transform: translate(-50%, -50%);
 }
+
+#captureFrameBtn {
+  bottom: 0;
+  width: 100%;
+  border-radius: 0;
+  position: fixed;
+  padding: 20px 0;
+}

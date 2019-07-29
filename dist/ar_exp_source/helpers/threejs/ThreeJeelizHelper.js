@@ -249,10 +249,17 @@ THREE.JeelizHelper=(function(){
   }
 
   function faceDetect(){
-    captureButton.classList.remove('btn-danger');
-    captureButton.classList.add('btn-primary');
-    captureButton.innerHTML= 'Take photo!';
-    captureButton.disabled= false; 
+    if (isDetected){
+      captureButton.classList.remove('btn-danger');
+      captureButton.classList.add('btn-primary');
+      captureButton.innerHTML= 'Take photo!';
+      captureButton.disabled= false;
+    } else {
+      captureButton.classList.remove('btn-primary');
+      captureButton.classList.add('btn-danger');
+      captureButton.innerHTML= 'Face not detected';
+      captureButton.disabled= true;
+    }
   }
 
 

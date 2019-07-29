@@ -223,7 +223,7 @@ THREE.JeelizHelper=(function(){
 
         JEEFACETRANSFERAPI.on_detect(function(isDetected){
           _isFaceDetected=isDetected;
-          alert('face is detected');
+          faceDetect();
         });
 
         _ThreeScene.add(_ThreeMorphAnimMesh);
@@ -246,6 +246,13 @@ THREE.JeelizHelper=(function(){
     captureButton.classList.add('btn-danger');
     captureButton.innerHTML= 'Webcam not detected!';
     captureButton.disabled= true;
+  }
+
+  function faceDetect(){
+    captureButton.classList.remove('btn-danger');
+    captureButton.classList.add('btn-primary');
+    captureButton.innerHTML= 'Take photo!';
+    captureButton.disabled= false; 
   }
 
 

@@ -240,10 +240,11 @@ THREE.JeelizHelper=(function(){
     return new THREE.TextureLoader().load(_assetsParentPath+imageURL);
   }
   
-  function faceNotDetected(){
+  function noWebcam(){
     captureButton.classList.remove('btn-primary');
     captureButton.classList.add('btn-danger');
-    captureButton.innerHTML= "Face not detected!";
+    captureButton.innerHTML= 'Webcam not detected!';
+    captureButton.disabled= true;
   }
 
 
@@ -263,7 +264,7 @@ THREE.JeelizHelper=(function(){
         callbackReady: function(errCode){
           if (errCode){
             console.log('ERROR - cannot init JEEFACETRANSFERAPI. errCode =', errCode);
-            faceNotDetected();
+            noWebcam();
             
             if (spec.errorCallback){
               spec.errorCallback(errCode);

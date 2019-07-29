@@ -240,6 +240,11 @@ THREE.JeelizHelper=(function(){
     return new THREE.TextureLoader().load(_assetsParentPath+imageURL);
   }
   
+  function faceNotDetected(){
+    captureButton.classList.remove('btn-primary');
+    captureButton.classList.add('btn-danger');
+    captureButton.innerHTML= "Face not detected!";
+  }
 
 
   //PUBLIC METHODS :
@@ -258,6 +263,8 @@ THREE.JeelizHelper=(function(){
         callbackReady: function(errCode){
           if (errCode){
             console.log('ERROR - cannot init JEEFACETRANSFERAPI. errCode =', errCode);
+            faceNotDetected();
+            
             if (spec.errorCallback){
               spec.errorCallback(errCode);
             }

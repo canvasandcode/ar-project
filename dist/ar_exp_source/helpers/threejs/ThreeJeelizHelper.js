@@ -223,6 +223,7 @@ THREE.JeelizHelper=(function(){
 
         JEEFACETRANSFERAPI.on_detect(function(isDetected){
           _isFaceDetected=isDetected;
+          alert('face is detected');
         });
 
         _ThreeScene.add(_ThreeMorphAnimMesh);

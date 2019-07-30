@@ -20,4 +20,6 @@ function main(){
       position: [0,-60,0],
       scale: 3
     });
+
+    console.log('test');
 } //end main()

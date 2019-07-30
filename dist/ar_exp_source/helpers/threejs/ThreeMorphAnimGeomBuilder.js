@@ -89,7 +89,7 @@ function ThreeMorphAnimGeomBuilder(spec){
         //construct morphs
         
         console.log('INFO in ThreeMorphAnimMeshBuilder : ', dataObj.morphs.length, 'morphs found');
-        
+        $(".se-pre-con").fadeOut("slow");
 
         var morphs=[];
         var nVertices=nVertices0+verticesDuplicatedIndices.length;

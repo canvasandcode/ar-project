@@ -103,6 +103,7 @@ body {
   max-height: 25vh;
   width: 100px;
   height: 80px;
+  display: none;
 }
 
 .webojiCanvas {

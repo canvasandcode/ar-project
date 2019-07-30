@@ -220,10 +220,22 @@ THREE.JeelizHelper=(function(){
           
         //_ThreeMorphAnimMesh.morphTargetInfluences=morphTargetInfluencesDst;
         _ThreeMorphAnimMesh.userData.morphJeelizInfluences=morphTargetInfluencesDst;
-
+        function faceDetected (){
+          _isFaceDetected=isDetected;
+        }
         JEEFACETRANSFERAPI.on_detect(function(isDetected){
           _isFaceDetected=isDetected;
-          // faceDetect();
+          if(isDetected){
+            captureButton.classList.remove('btn-danger');
+            captureButton.classList.add('btn-primary');
+            captureButton.innerHTML= 'Take photo!';
+            captureButton.disabled= false;
+          } else {
+            captureButton.classList.remove('btn-primary');
+            captureButton.classList.add('btn-danger');
+            captureButton.innerHTML= 'Face not detected!';
+            captureButton.disabled= true;
+          }
         });
 
         _ThreeScene.add(_ThreeMorphAnimMesh);
@@ -246,20 +258,6 @@ THREE.JeelizHelper=(function(){
     captureButton.classList.add('btn-danger');
     captureButton.innerHTML= 'Webcam not detected!';
     captureButton.disabled= true;
-  }
-
-  function faceDetect(){
-    if (isDetected){
-      captureButton.classList.remove('btn-danger');
-      captureButton.classList.add('btn-primary');
-      captureButton.innerHTML= 'Take photo!';
-      captureButton.disabled= false;
-    } else {
-      captureButton.classList.remove('btn-primary');
-      captureButton.classList.add('btn-danger');
-      captureButton.innerHTML= 'Webcam not detected!';
-      captureButton.disabled= true;
-    }
   }
 
 

@@ -104,7 +104,6 @@
       data-toggle="modal"
       data-target="#exampleModal"
       id ="captureFrameBtn"
-      disabled
     >
       Face not detected
     </button>
@@ -168,8 +167,6 @@ var frameContainer = document.getElementById('frameContainer');
 captureButton.addEventListener("click", function(){
   frameContainer.innerHTML = "<img src='" + img + "'>"
 });
-
-alert(detectState.detected);
 
     </script>
     <script src="assets/js/jquery-3.3.1.min.js"></script>

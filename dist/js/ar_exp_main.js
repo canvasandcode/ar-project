@@ -17,9 +17,7 @@ function main(){
         specularMapURL: 'textures/Fox_specular.png',
         flexMapURL: 'textures/Fox_flex.png'
       },
-      position: [0,-60,0],
+      position: [0,-75,0],
       scale: 3
     });
-
-    console.log('test');
 } //end main()

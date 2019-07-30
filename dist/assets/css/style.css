@@ -161,4 +161,9 @@ body {
   background: url(../img/spinner.gif) center no-repeat #fff;
 }
 
+.brand-logo {
+  width: 50px;
+  margin: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,7 @@
 .icon-bar {
   width: 38px;
   height: 6px;
-  background-color: #fcc64d;
+  background-color: #fbc64d;
   display: block;
   transition: all 0.2s;
   margin-top: 4px;
@@ -48,47 +48,6 @@
   width: 15em;
 }
 
-.animated-bg {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 800%;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
-}
-
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@-moz-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 body {
   overflow: auto;
   overflow-y: auto;
@@ -164,6 +123,10 @@ body {
 .brand-logo {
   width: 50px;
   margin: 10px;
+}
+
+.jumbotron {
+  background-color: #fbc64d;
 }
 
 /*# sourceMappingURL=style.css.map */

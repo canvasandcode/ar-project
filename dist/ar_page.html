@@ -60,6 +60,8 @@
     <script type="text/javascript" src="js/ar_exp_main.js"></script>
   </head>
   <body onload="main()">
+    <div class="se-pre-con"></div>
+
     <!--Bootstrap Nav-->
     <nav class="navbar navigation__wrapper">
       <button
@@ -156,7 +158,11 @@
       width="600"
       height="600"
     ></canvas>
-
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script>
       //Gets the emoji canvas using its ID
 
@@ -178,10 +184,14 @@
         }
       });
 
+      $(window).on('load', function() {
+        // Animate loload,ader off screen
+        $(".se-pre-con").fadeOut("slow");;
+      });
+      
 
     </script>
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
     <script src="assets/js/main.js"></script>
   </body>
 </html>

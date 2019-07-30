@@ -11,9 +11,9 @@ function main(){
 
       //FOX :
       //meshURL: 'meshes/fox.json',
-      meshURL: 'meshes/tiger.json',
+      meshURL: 'meshes/shaggy.json',
       matParameters: {
-        diffuseMapURL: 'textures/diffuse_tiger.jpg',
+        diffuseMapURL: 'textures/Shaggy_latest_Normls.jpg',
         specularMapURL: 'textures/Fox_specular.png',
         flexMapURL: 'textures/Fox_flex.png'
       },

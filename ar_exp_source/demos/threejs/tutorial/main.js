@@ -6,8 +6,8 @@ function main(){
       canvasThreeId: 'webojiCanvas',
       canvasId: 'jeefacetransferCanvas',
 
-      assetsParentPath: '/ar_exp_source/assets/3D/',
-      NNCpath: '/ar_exp_source/dist/',
+      assetsParentPath: '../../../assets/3D/',
+      NNCpath: '../../../dist/',
 
       //FOX :
       meshURL: 'meshes/fox.json',

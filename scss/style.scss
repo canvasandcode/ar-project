@@ -134,3 +134,20 @@ body {
   position: fixed;
   padding: 20px 0;
 }
+
+#capturedImage {
+  width: 100%;
+}
+
+.modal-header,
+.modal-footer {
+  background: #c11f09;
+  color: white;
+}
+
+.modal-content {
+  .close {
+    color: white;
+    opacity: 1;
+  }
+}
